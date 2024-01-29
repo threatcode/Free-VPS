@@ -9,7 +9,7 @@ ENV DIR /usr/src/Free-RDP
 
 COPY kali.sh .
 RUN chmod +x kali.sh \
-  bash kali.sh
+  bash /usr/src/Free-RDP/kali.sh
 
 WORKDIR $DIR
 COPY . $DIR
