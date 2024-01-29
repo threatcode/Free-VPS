@@ -7,8 +7,8 @@ ENV LANG en_US.utf8
 
 ENV DIR /usr/src/Free-RDP
 
-COPY kali.sh .
-RUN chmod +x kali.sh
-RUN bash /usr/src/Free-RDP/kali.sh
+COPY kali.sh $DIR/
+RUN chmod +x $DIR/kali.sh
+RUN bash $DIR/kali.sh
 
 COPY . $DIR
